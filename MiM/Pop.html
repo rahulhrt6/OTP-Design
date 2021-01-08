@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Click Me</h2>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p><div class="container">
+
+        <div class="prompt">
+         <h1>Phone Verification</h1>
+         <hr>
+         <h1>Enter the OTP recieved</h1>
+
+       </div>
+
+  <form method="get" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+    <input type="number" id="digit-1" name="digit-1" data-next="digit-2" maxlength="1"/>
+    <input type="number" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" maxlength="1"/>
+    <input type="number" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" maxlength="1"/>
+    <input type="number" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" maxlength="1"/>
+    <input type="number" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" maxlength="1"/>
+    <input type="number" id="digit-6" name="digit-6" data-previous="digit-5" />
+  </form>
+  <div class="cd">
+    <h2>Change number</h2>
+    
+    <h2>Re-sent OTP</h2>
+  </div>
+  <script src="index.js" charset="utf-8"></script>
+      <button>Verify phone number</button>
+    </div>
+    <script type="text/javascript">
+
+      function clickEvent(first,last){
+        if(first.value.length){
+
+          document.getElementById(last).focus();
+        }
+      }
+
+    </script>
+</p>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

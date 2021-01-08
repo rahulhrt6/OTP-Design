@@ -1,0 +1,86 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
+}
+.container{
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  align-items: space-around;
+  justify-content: center;
+}
+.digit-group{
+
+  display: flex;
+  justify-content: center;
+}
+input{
+  margin: 10px;
+  height: 35px;
+  width: 65px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  background: #eef2f3;
+}
+h1{
+  text-align: center;
+  color: Red;
+}
+button{
+width: 150px;
+height: 40px;
+margin: 25px auto 0px auto;
+border: none;
+border-radius: 5px;
+letter-spacing: 2px;
+cursor: pointer;
+background: #616161;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.cd{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+h2{
+  color: green;
+}
